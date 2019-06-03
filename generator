@@ -2,6 +2,9 @@
 
 set -x
 
+export LIST_IMAGES="coreos;2079.4.0;https://stable.release.core-os.net/amd64-usr/current/coreos_production_openstack_image.img.bz2"
+export NAME_REGISTRY="1337andre"
+
 for IMAGE in $LIST_IMAGES
 do
 	OS_NAME=$(echo $IMAGE | cut -d";" -f1)
